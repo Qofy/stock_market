@@ -3,90 +3,544 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
+  <title>Home - AIT Stock Market</title>
   <link rel="stylesheet" href="/styles/home.css">
 </head>
 <body>
-  <header>
-    <div class="logo">AIT</div>
-    <div class="middle">
-      <a href="/html/home.html" class="active">
-        <img src="/html-icons/home.png" alt="home">
-      </a>
-      <a href="/html/chart.html">
-        <img src="/html-icons/analytics.png" alt="chart">
-      </a>
-      <a href="/html/wallet.html">
-        <img src="/html-icons/wallet.png" alt="wallet">
-      </a>
-      <a href="/html/group.html">
-        <img src="/html-icons/people.png" alt="groups">
-      </a>
-      <a href="/html/menu.html">
-        <img src="/html-icons/menu.png" alt="menu">
-      </a>
+  <!-- Main Header Navigation -->
+  <header class="main-header">
+    <div class="logo">
+      <h1>AIT</h1>
     </div>
-    <div class="right">
-      <input class="search-bar" type="text" placeholder="search">
-      <img src="/html-icons/bell.png" alt="notification">
+    
+    <nav class="middle-nav">
+      <a href="/html/home.html" class="nav-link active" aria-label="Home">
+        <img src="/html-icons/home.png" alt="Home">
+      </a>
+      <a href="/html/chart.html" class="nav-link" aria-label="Charts">
+        <img src="/html-icons/analytics.png" alt="Charts">
+      </a>
+      <a href="/html/wallet.html" class="nav-link" aria-label="Wallet">
+        <img src="/html-icons/wallet.png" alt="Wallet">
+      </a>
+      <a href="/html/group.html" class="nav-link" aria-label="Groups">
+        <img src="/html-icons/people.png" alt="Groups">
+      </a>
+      <a href="/html/menu.html" class="nav-link" aria-label="Menu">
+        <img src="/html-icons/menu.png" alt="Menu">
+      </a>
+    </nav>
+    
+    <div class="header-right">
+      <div class="search-container">
+        <input class="search-bar" type="text" placeholder="Search stocks..." aria-label="Search stocks">
+      </div>
+      <button class="notification-btn" aria-label="Notifications">
+        <img src="/html-icons/bell.png" alt="Notifications">
+      </button>
     </div>
   </header>
-  
-  <div class="head">
-    <div class="active">
-      <img src="/html-icons/newspaper.png" alt="news">
-      <p>News</p>
-    </div>
-    <div>
-      <img src="/html-icons/star.png" alt="watchlist">
-      <p>My watchlist</p>
-    </div>
-    <div>
-      <h2>
-        📈
-      </h2>
-      <p>Top winners</p>
-    </div>
-    <div>
-      <h2>
-        📉
-      </h2>
-      <p>Top losers</p>
-    </div>
-    <div>
-      <img src="/html-icons/earth.png" alt="global-markets">
-      <p>Global markets</p>
-    </div>
-    <div>
-      <img src="/html-icons/love.png" alt="most-owned">
-      <p>Most owned</p>
-    </div>
-    <div>
-      <img src="/html-icons/box.png" alt="new-on-AIT">
-      <p>New on AIT</p>
-    </div>
-    <div>
-      <img src="/html-icons/plus.png" alt="add">
-    </div>
-    <div>
-      <img src="/html-icons/pen.png" alt="pen">
-    </div>
-  </div>
+
+  <!-- Secondary Navigation -->
+  <nav class="secondary-nav">
+    <a href="#" class="nav-item">
+      
+        <img src="/html-icons/newspaper.png" alt="">
+        <span>News</span>
+      
+    </a>
+
+    <a href="#" class="nav-item"> 
+        <img src="/html-icons/star.png" alt="">
+        <span>My watchlist</span>
+    </a>
+
+    <a href="#" class="nav-item">
      
-  <div class="content">
-    <aside class="side-bar">
-      <div class="adv">
-        <p>
-          Invest autmatically with ready made pies
-        </p>
-        <button>
-          Create pie
+        <span class="emoji">📈</span>
+        <span>Top winners</span>
+      
+    </a>
+
+    <a href="#">
+
+     
+   <a href="#" class="nav-item">      
+   <span class="emoji">📉</span>
+        <span>Top losers</span>
+      
+    </a>
+
+    <a href="#" class="nav-item">
+     
+        <img src="/html-icons/earth.png" alt="">
+        <span>Global markets</span>
+      
+    </a>
+
+    <a href="#" class="nav-item">
+     
+        <img src="/html-icons/love.png" alt="">
+        <span>Most owned</span>
+      
+    </a>
+
+    <a href="#" class="nav-item">
+     
+        <img src="/html-icons/box.png" alt="">
+        <span>New on AIT</span>
+      
+    </a>
+
+    <a href="#">
+      <div class="nav-item action-btn">
+        <img src="/html-icons/plus.png" alt="Add">
+      </div>
+    </a>
+
+    <a href="#">
+      <div class="nav-item action-btn">
+        <img src="/html-icons/pen.png" alt="Edit">
+      </div>
+    </a>
+  </nav>
+
+  <!-- Main Content Area -->
+  <main class="main-content" id="main-body">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <!-- Advertisement Section -->
+      <div class="advertisement">
+        <button class="close-btn" aria-label="Close advertisement">
+          <img src="/html-icons/close-window.png" alt="Close">
         </button>
-        <img src="/html-icons/close-window.png" alt="">
+        <div class="ad-content">
+          <p>Invest automatically with ready made pies</p>
+          <button class="cta-btn">Create pie</button>
+        </div>
+      </div>
+
+      <!-- Stock Information -->
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://i.pinimg.com/736x/ea/ea/e8/eaeae8ac3c84ef55244992e2e56562d1.jpg" alt="Shell Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Shell</h3>
+              <p class="ticker">SHEL</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>72<span class="cents">.55</span>
+              </p>
+              <p class="price-change positive">
+                +0.01 <span class="percentage">(0.01%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line negative"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://icon2.cleanpng.com/20240216/yhs/transparent-google-logo-google-logo-with-colorful-letters-on-black-1710875297222.webp" alt="google-alphabet" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Alphabet (Class A)</h3>
+              <p class="ticker">GOOGL</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>174<span class="cents">.55</span>
+              </p>
+              <p class="price-change negative">
+                -0.12 <span class="percentage">(0.07%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://www.nvidia.com/content/nvidiaGDC/de/de_DE/about-nvidia/legal-info/logo-brand-usage/_jcr_content/root/responsivegrid/nv_container_392921705/nv_container/nv_image.coreimg.100.1070.png/1722327058888/nvidia-logo-vert.png" alt="Shell Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Nvidia</h3>
+              <p class="ticker">NVDA</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>141<span class="cents">.80</span>
+              </p>
+              <p class="price-change negative">
+                +0.17 <span class="percentage">(0.12%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+           
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="Shell Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Apple</h3>
+              <p class="ticker">AAPL</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>196<span class="cents">.40</span>
+              </p>
+              <p class="price-change positive">
+                +0.05 <span class="percentage">(0.03%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+           
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://static.vecteezy.com/system/resources/previews/027/127/473/non_2x/microsoft-logo-microsoft-icon-transparent-free-png.png" alt="microsoft" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>MSFT</h3>
+              <p class="ticker">Microsoft</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>474<span class="cents">.21</span>
+              </p>
+              <p class="price-change negative">
+                -0.75 <span class="percentage">(0.16%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://cdn.iconscout.com/icon/free/png-256/free-tesla-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-company-vol-7-pack-logos-icons-2945257.png" alt="Shell Logo" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Tesla</h3>
+              <p class="ticker">TSLA</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>326<span class="cents">.92</span>
+              </p>
+              <p class="price-change positive">
+                +1.61 <span class="percentage">(0.49%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ZoPxHxiJ8nsrZTejjkVOIWcBlJt1D0KhLQ&s" alt="amazon" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Amazon</h3>
+              <p class="ticker">AMZN</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>211<span class="cents">.81</span>
+              </p>
+              <p class="price-change negative">
+                -0.29 <span class="percentage">(0.14%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://cdn.pixabay.com/photo/2021/12/14/22/29/meta-6871457_1280.png" alt="meta" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Meta Platform</h3>
+              <p class="ticker">META</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>682<span class="cents">.83</span>
+              </p>
+              <p class="price-change negative">
+                -0.04 <span class="percentage">(0.01%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+        </div>
+      </div>
+
+      <div class="stock-info">
+        <div class="stock-item">
+          <div class="stock-header">
+            <div class="company-logo">
+              <img src="https://111percent.world/assets/transforms/cases/coca-cola/logos/_800xAUTO_crop_center-center_75_none/Coca-Cola-Logo-2009.jpg" alt="Cola" onerror="this.style.display='none'">
+            </div>
+            <div class="company-details">
+              <h3>Coca-Cola</h3>
+              <p class="ticker">KO</p>
+            </div>
+            <div class="price-stats">
+              <p class="current-price">
+                <span class="currency">$</span>71<span class="cents">.13</span>
+              </p>
+              <p class="price-change positive">
+                +0.11 <span class="percentage">(0.015%)</span>
+              </p>
+            </div>
+          </div>
+          <div class="price-chart">
+    <div class="chart-placeholder">
+        <div class="zigzag-line"></div>
+        <div class="price-points">
+        </div>
+    </div>
+</div>
+
+        </div>
       </div>
     </aside>
-    <section class="bdy">main</section>
+
+    <!-- Main Content Section -->
+    <section class="main-body">
+      <div class="content-header">       
+            <img src="/html-icons/alarm-clock.png" alt="alarm">
+            <img src="/html-icons/more.png" alt="more">
+      </div>
+      <div class="content-body">
+        <div class=" content-focus-detail">
+          <div class="price_name">
+            <p class="ticker2">SHEL</p>
+            <h3>Shell</h3>
+            <p class="current-price2">
+                <span class="currency2">$</span>71<span class="cents2">.13</span>
+              </p>
+              <button class="price-button" >
+                Buy
+              </button>
+          </div>
+          <div class="company-logo_1">
+            <img src="https://i.pinimg.com/736x/ea/ea/e8/eaeae8ac3c84ef55244992e2e56562d1.jpg" alt="shell">
+          </div>
+        </div>
+
+        <!-- Replace the existing .big-reader div with this enhanced version -->
+<div class="big-reader">
+  <div class="chart-container">
+    <div class="chart-header">
+      <div class="chart-controls">
+        <button class="time-btn active" data-period="1D">1D</button>
+        <button class="time-btn" data-period="1W">1W</button>
+        <button class="time-btn" data-period="1M">1M</button>
+        <button class="time-btn" data-period="3M">3M</button>
+        <button class="time-btn" data-period="1Y">1Y</button>
+        <button class="time-btn" data-period="5Y">5Y</button>
+      </div>
+      <div class="chart-info">
+        <span class="chart-price">$72.55</span>
+        <span class="chart-change positive">+0.01 (0.01%)</span>
+      </div>
+    </div>
     
+    <div class="chart-area">
+      <div class="price-axis">
+        <div class="price-label">$73.00</div>
+        <div class="price-label">$72.75</div>
+        <div class="price-label">$72.50</div>
+        <div class="price-label">$72.25</div>
+        <div class="price-label">$72.00</div>
+        <div class="price-label">$71.75</div>
+      </div>
+      
+      <div class="chart-canvas">
+        <svg class="stock-chart" viewBox="0 0 800 300" preserveAspectRatio="xMidYMid meet">
+          <!-- Grid lines -->
+          <defs>
+            <pattern id="grid" width="40" height="30" patternUnits="userSpaceOnUse">
+              <path d="M 40 0 L 0 0 0 30" fill="none" stroke="#333" stroke-width="0.5" opacity="0.3"/>
+            </pattern>
+            <linearGradient id="areaGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:0.3" />
+              <stop offset="100%" style="stop-color:#00d4aa;stop-opacity:0.05" />
+            </linearGradient>
+          </defs>
+          
+          <rect width="100%" height="100%" fill="url(#grid)" />
+          
+          <!-- Stock price line and area -->
+          <path class="price-area" d="M 50 200 L 100 180 L 150 190 L 200 170 L 250 160 L 300 175 L 350 155 L 400 140 L 450 150 L 500 135 L 550 145 L 600 130 L 650 125 L 700 120 L 750 115 L 750 300 L 50 300 Z" fill="url(#areaGradient)"/>
+          
+          <path class="price-line" d="M 50 200 L 100 180 L 150 190 L 200 170 L 250 160 L 300 175 L 350 155 L 400 140 L 450 150 L 500 135 L 550 145 L 600 130 L 650 125 L 700 120 L 750 115" stroke="#00d4aa" stroke-width="2" fill="none"/>
+          
+          <!-- Price points -->
+          <circle class="price-point" cx="750" cy="115" r="4" fill="#00d4aa"/>
+          
+          <!-- Hover tooltip -->
+          <g class="tooltip" style="display: none;">
+            <rect x="0" y="0" width="80" height="30" fill="#1a1a1a" stroke="#00d4aa" rx="4"/>
+            <text x="40" y="20" text-anchor="middle" fill="#ffffff" font-size="12">$72.55</text>
+          </g>
+        </svg>
+        
+        <!-- Volume bars at bottom -->
+        <div class="volume-chart">
+          <div class="volume-bar" style="height: 60%"></div>
+          <div class="volume-bar" style="height: 40%"></div>
+          <div class="volume-bar" style="height: 80%"></div>
+          <div class="volume-bar" style="height: 30%"></div>
+          <div class="volume-bar" style="height: 70%"></div>
+          <div class="volume-bar" style="height: 50%"></div>
+          <div class="volume-bar" style="height: 90%"></div>
+          <div class="volume-bar" style="height: 45%"></div>
+          <div class="volume-bar" style="height: 65%"></div>
+          <div class="volume-bar" style="height: 35%"></div>
+          <div class="volume-bar" style="height: 75%"></div>
+          <div class="volume-bar" style="height: 55%"></div>
+          <div class="volume-bar" style="height: 85%"></div>
+          <div class="volume-bar" style="height: 25%"></div>
+          <div class="volume-bar" style="height: 95%"></div>
+        </div>
+      </div>
+      
+      <div class="time-axis">
+        <div class="time-label">9:30</div>
+        <div class="time-label">11:00</div>
+        <div class="time-label">12:30</div>
+        <div class="time-label">2:00</div>
+        <div class="time-label">3:30</div>
+        <div class="time-label">4:00</div>
+      </div>
+    </div>
+    
+    <div class="chart-stats">
+      <div class="stat-item">
+        <span class="stat-label">Open</span>
+        <span class="stat-value">$72.10</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">High</span>
+        <span class="stat-value">$72.85</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Low</span>
+        <span class="stat-value">$71.95</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Volume</span>
+        <span class="stat-value">2.5M</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Avg Vol</span>
+        <span class="stat-value">3.2M</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-label">Mkt Cap</span>
+        <span class="stat-value">$284.2B</span>
+      </div>
+    </div>
   </div>
+</div>
+
+        <p>Welcome to AIT Stock Market Platform</p>
+      </div>
+    </section>
+  </main>
 </body>
+<script src="/js/chart.js"></script>
+<script src="/js/stock-focus.js"></script>
+
 </html>

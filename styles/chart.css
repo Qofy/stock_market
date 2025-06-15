@@ -1,0 +1,139 @@
+/* Base Styles */
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    height: 100%;
+    overflow: hidden; /* Prevent page scrolling */
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif !important;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 1.6;
+    height: 100vh;
+    overflow: hidden; /* Prevent page scrolling */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styles */
+.main-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 6rem;
+    padding: 0 2rem;
+    border-bottom: 1px solid #929292;
+    background-color: #000000;
+    flex-shrink: 0; /* Prevent header from shrinking */
+    z-index: 100;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: #ffffff;
+}
+
+/* Middle Navigation */
+.middle-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.middle-nav .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 0.8rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    min-width: 5rem;
+}
+
+.middle-nav .nav-link:hover {
+    background-color: #2a2a2a;
+    transform: translateY(-2px);
+}
+
+.middle-nav .nav-link.active {
+    background-color: #474848;
+}
+
+.middle-nav .nav-link.active:hover {
+    background-color: #0056b3;
+}
+
+.middle-nav img {
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: transform 0.2s ease;
+}
+
+.middle-nav img:hover {
+    transform: scale(1.1);
+}
+
+/* Header Right Section */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.search-container {
+    position: relative;
+}
+
+.search-bar {
+    padding: 1.5rem 2.5rem;
+    border-radius: 4rem;
+    border: none;
+    background-color: #343333;
+    color: #ffffff;
+    font-size: 1.4rem;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 25rem;
+}
+
+.search-bar:focus {
+    background-color: #404040;
+    box-shadow: 0 0 0 2px #007bff;
+}
+
+.search-bar::placeholder {
+    color: #999999;
+}
+
+.notification-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s ease;
+}
+
+.notification-btn:hover {
+    background-color: #2a2a2a;
+}
+
+.notification-btn img {
+    width: 2.4rem;
+    height: 2.4rem;
+}
