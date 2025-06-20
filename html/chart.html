@@ -157,9 +157,157 @@
   
   </div>
 </div>
-
-          </div>
+<div class="container">
+        <div class="cash">
+            <p class="cash-n">
+                Cash 
+                <span class="cash-dropdown-toggle">
+                    <img src="/html-icons/down-arrow.png" alt="down-arrow">
+                </span>
+            </p>
+            <p class="cash-amount">0.00</p>
         </div>
+        
+        <!-- Cash Dropdown Content - Outside the cash div to push content down -->
+        <div class="cash-dropdown-content">
+            <div class="dropdown-item-1">
+                <div class="main-point">
+                    <img src="/html-icons/analytics.png" alt="analytics">
+                    <p>MAIN POT</p>
+                    <p>$0.00</p>
+                </div>
+                <div class="spending-point">
+                    <img src="/html-icons/wallet.png" alt="wallet">
+                    <p>SPENDING POT</p>
+                    <p>$0.00</p>
+                </div>
+            </div>
+            <div class="dropdown-item2">
+                <button class="action-btn deposit-btn">
+                    <img src="/html-icons/plus1.png" alt="plus1">
+                    Deposit
+                </button>
+                <button class="action-btn move-btn">
+                    Move cash
+                </button>
+                <button class="action-btn withdraw-btn">
+                    Withdraw
+                </button>
+            </div>
+        </div>
+
+         <div class="investment">
+            <header class="investment-header">
+                <p>
+                    Investments
+                    <span class="investment-dropdown-toggle">
+                        <img src="/html-icons/down-arrow.png" alt="arrow-top">
+                    </span>
+                </p>
+                <p class="investment-amount">
+                    $458.74
+                </p>
+            </header>
+            
+            <div class="sub-header">
+                <input type="text" placeholder="Search">
+                <img src="/html-icons/burger-menu.png" alt="pop-up_menu" class="menu-popup-toggle">
+            </div>
+
+            <!-- Investment Dropdown Content -->
+            <div class="investment-dropdown-content">
+                <div class="dropdown-item">
+                    <div class="investment-com-logo">
+                      <img src="/images/images.png" alt="deutsche-bank">
+                    </div>
+                    <div class="name_shares">
+                      <h1>
+                        Deutsche bank
+                      </h1>
+                      <p>
+                        16.977532 <span>SHARES</span>
+                      </p>
+                    </div>
+                    <div class="amount_percentge">
+                      <h1>
+                        $407.83
+                      </h1>
+                      <p>+30.97<span>(8.14%)</span></p>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <span>Today's Gain/Loss:</span>
+                    <span class="positive">+$12.34</span>
+                </div>
+               
+                  <div class="dropdown-item">
+                    <div class="investment-com-logo">
+                      <img src="/images/images.png" alt="deutsche-bank">
+                    </div>
+                    <div class="name_shares">
+                      <h1>
+                        Deutsche bank
+                      </h1>
+                      <p>
+                        16.977532 <span>SHARES</span>
+                      </p>
+                    </div>
+                    <div class="amount_percentge">
+                      <h1>
+                        $407.83
+                      </h1>
+                      <p>+30.97<span>(8.14%)</span></p>
+                    </div>
+                </div>
+                <div class="dropdown-item">
+                    <span>Today's Gain/Loss:</span>
+                    <span class="positive">+$12.34</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Menu Popup Modal -->
+    <div class="popup-overlay">
+        <div class="popup-content">
+            <div class="popup-header">
+                <h3>Menu Options</h3>
+                <span class="popup-close">&times;</span>
+            </div>
+            <div class="popup-body">
+                <div class="popup-item">
+                    <img src="/html-icons/filter.png" alt="filter">
+                    <span>Filter Investments</span>
+                </div>
+                <div class="popup-item">
+                    <img src="/html-icons/sort.png" alt="sort">
+                    <span>Sort by Performance</span>
+                </div>
+                <div class="popup-item">
+                    <img src="/html-icons/export.png" alt="export">
+                    <span>Export Data</span>
+                </div>
+                <div class="popup-item">
+                    <img src="/html-icons/settings.png" alt="settings">
+                    <span>Settings</span>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+     <div class="asset-allocation">
+    <div class="asset-header">
+      <p>Asset allocation</p>
+      <img class="asset-toggle" src="/html-icons/down-arrow.png" alt="drop-down">
+    </div>
+    <p>See the proportion of each asset. in your portfolio and track its daily price changee</p>
+    <div class="asset-weight">
+      <div class="asset-detail">
+        <img src="/images/images.png" alt="dbk">
+        <p>DBK</p>
+        <p>0.99%</p>
+      </div>
+    </div>
     </aside>
 
     <!-- Main Content Section -->
@@ -171,8 +319,8 @@
       <div class="content-body">
         <div class=" content-focus-detail">
           <div class="price_name">
-            <p class="ticker2">SHEL</p>
-            <h3>Shell</h3>
+            <p class="ticker2">DBK</p>
+            <h3>Deutsche-bank</h3>
             <p class="current-price2">
                 <span class="currency2">$</span>71<span class="cents2">.13</span>
               </p>
@@ -181,9 +329,11 @@
               </button>
           </div>
           <div class="company-logo_1">
-            <img src="https://i.pinimg.com/736x/ea/ea/e8/eaeae8ac3c84ef55244992e2e56562d1.jpg" alt="shell">
+            <img src="/images/images.png" alt="deutsche-bank">
           </div>
         </div>
+
+        
 
         <!-- Replace the existing .big-reader div with this enhanced version -->
 <div class="big-reader">
@@ -276,8 +426,11 @@
   </div>
 </div>
 
+ 
+  </div>
       </div>
     </section>
   </main>
 </body>
+    <script src="/js/pop-up.js"></script>
 </html>

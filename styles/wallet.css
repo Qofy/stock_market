@@ -137,3 +137,47 @@ body {
     width: 2.4rem;
     height: 2.4rem;
 }
+.main-content {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex: 1; /* Take remaining space */
+    max-width: 115rem;
+    margin: 0 auto;
+    gap: 0;
+    overflow: hidden; 
+    height: calc(100vh - 6rem - 8rem);
+}
+
+/* Sidebar Styles */
+.sidebar {
+    width: 45rem;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-right: 1px solid #929292;
+    padding: 2rem;
+    background-color: #111111;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    flex-shrink: 0; 
+}
+
+
+
+
+/* Main Body Content */
+.main-body {
+    flex: 1;
+    height: 100%; 
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #0a0a0a;
+    border-left: 1px solid #929292;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}

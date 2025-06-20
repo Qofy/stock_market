@@ -235,6 +235,622 @@ body {
     box-shadow: 0 4px 8px rgba(21, 83, 149, 0.4);
 }
 
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.cash {
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.4rem;
+    border: 2px solid #5a5b5b;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.cash .cash-n {
+    font-size: 2rem;
+    font-weight: 450;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.cash-dropdown-toggle {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cash-dropdown-toggle:hover {
+    transform: scale(1.1);
+}
+
+.cash-dropdown-toggle.active {
+    transform: rotate(180deg);
+}
+
+.cash-amount {
+    font-size: 2rem;
+}
+
+/* Cash Dropdown Styles */
+.cash-dropdown-content {
+    width: 100%;
+    background: rgb(8, 8, 8);
+    border: 2px solid #5a5b5b;
+    border-top: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease, margin-bottom 0.4s ease;
+    margin-bottom: 0;
+}
+
+.cash-dropdown-content.show {
+    max-height: 400px;
+    margin-bottom: 2rem;
+}
+
+/* Dropdown Item 1 - Contains the pots */
+.dropdown-item-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.main-point,
+.spending-point {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: #0b0b0b;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+}
+
+.main-point img,
+.spending-point img {
+    width: 24px;
+    height: 24px;
+}
+
+.main-point p,
+.spending-point p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.main-point p:nth-child(2),
+.spending-point p:nth-child(2) {
+    flex: 1;
+    font-weight: 500;
+    color: #f7f4f4;
+}
+
+.main-point p:nth-child(3),
+.spending-point p:nth-child(3) {
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #f8f8f8;
+}
+
+/* Action Buttons Container */
+.dropdown-item2 {
+    display: flex;
+    gap: 0.75rem;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+
+.action-btn {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1rem;
+    border: none;
+    /* background: white; */
+    /* color: #007bff; */
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-btn:hover {
+    background: #007bff;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.3);
+}
+
+.action-btn img {
+    width: 16px;
+    height: 16px;
+}
+
+.deposit-btn {
+    color: #ffffff;
+    background-color: #007bff;
+}
+
+.deposit-btn:hover {
+    background: #28a745;
+    color: white;
+    box-shadow: 0 4px 8px rgba(40, 167, 69, 0.3);
+}
+
+.move-btn {
+    background-color: #404040;
+    color:#ffffff;
+}
+
+.move-btn:hover {
+    background: #ffc107;
+    color: #856404;
+    box-shadow: 0 4px 8px rgba(255, 193, 7, 0.3);
+}
+
+.withdraw-btn {
+  background-color: #404040;
+    color: #ffffff;
+}
+
+.withdraw-btn:hover {
+    background: #dc3545;
+    color: white;
+    box-shadow: 0 4px 8px rgba(220, 53, 69, 0.3);
+}
+
+
+.investment {
+    width: 100%;
+    position: relative;
+    transition: margin-top 0.4s ease;
+}
+
+.investment-header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    transition: margin-bottom 0.3s ease;
+}
+
+.investment-header.collapsed {
+    margin-bottom: 0;
+}
+
+.investment-header p {
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    flex-direction: row;
+    gap: .5rem;
+    align-items: center;
+}
+
+.investment-dropdown-toggle {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.investment-dropdown-toggle:hover {
+    transform: scale(1.1);
+}
+
+.investment-dropdown-toggle.active {
+    transform: rotate(180deg);
+}
+
+/* Asset Allocation Section */
+.asset-allocation {
+    width: 100%;
+    margin-top: 2rem;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background: rgb(3, 3, 3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.asset-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.asset-header p {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.asset-toggle {
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.asset-toggle:hover {
+    transform: scale(1.1);
+}
+
+.asset-toggle.active {
+    transform: rotate(180deg);
+}
+
+.asset-allocation > p {
+    font-size: 1rem;
+    color: #ffffff;
+    margin: 0 0 1.5rem 0;
+    line-height: 1.5;
+}
+
+.asset-weight {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease, padding 0.4s ease;
+}
+
+.asset-weight.show {
+    max-height: 500px;
+    padding-top: 1rem;
+    border-top: 1px solid #e9ecef;
+}
+
+.asset-detail {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    background: #000000;
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    transition: all 0.2s ease;
+}
+
+.asset-detail:hover {
+    /* background: #e9ecef; */
+    transform: translateX(5px);
+}
+
+.asset-detail:last-child {
+    margin-bottom: 0;
+}
+
+.asset-detail img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+    margin-right: 1rem;
+}
+
+.asset-detail p:nth-child(2) {
+    flex: 1;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0;
+}
+
+.asset-detail p:nth-child(3) {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #399110;
+    margin: 0;
+    background: transparent;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    border: 1px solid #bbdefb;
+}
+
+
+/* Investment Dropdown Styles */
+.investment-dropdown-content {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.investment-dropdown-content.show {
+    max-height: 200px;
+    padding: 1rem;
+}
+
+.investment-dropdown-content:not(.show) {
+    padding: 0 1rem;
+}
+
+.sub-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.sub-header.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sub-header input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 30rem;
+}
+
+.menu-popup-toggle {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.menu-popup-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Investment Dropdown Styles - Updated */
+.investment-dropdown-content {
+    background: #000;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.investment-dropdown-content.show {
+    max-height: 300px;
+    padding: 1rem;
+}
+
+.investment-dropdown-content:not(.show) {
+    padding: 0 1rem;
+}
+
+/* Investment Item Styles */
+.investment-dropdown-content .dropdown-item {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background: #000;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.investment-dropdown-content .dropdown-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.investment-dropdown-content .dropdown-item:last-child {
+    margin-bottom: 0;
+}
+
+/* Investment Company Logo */
+.investment-com-logo {
+    margin-right: 1rem;
+}
+
+.investment-com-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e9ecef;
+}
+
+/* Name and Shares Section */
+.name_shares {
+    flex: 1;
+    margin-right: 1rem;
+}
+
+.name_shares h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #f8f8f8;
+}
+
+.name_shares p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.name_shares p span {
+    font-weight: 500;
+    color: #6c757d;
+}
+
+/* Amount and Percentage Section */
+.amount_percentge {
+    text-align: right;
+}
+
+.amount_percentge h1 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #fefefe;
+}
+
+.amount_percentge p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #28a745;
+    font-weight: 500;
+}
+
+.amount_percentge p span {
+    color: #28a745;
+    font-weight: 400;
+}
+
+/* Simple dropdown item for other content */
+.investment-dropdown-content .dropdown-item:not(:has(.investment-com-logo)) {
+    justify-content: space-between;
+    background: transparent;
+    box-shadow: none;
+    border-top: 1px solid #dee2e6;
+    border-radius: 0;
+    padding: 0.75rem 0;
+}
+
+.investment-dropdown-content .dropdown-item:not(:has(.investment-com-logo)):hover {
+    transform: none;
+    box-shadow: none;
+    background-color: #e9ecef;
+    margin: 0 -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+/* Popup Modal Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.popup-overlay.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.popup-content {
+    background: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: scale(0.7);
+    transition: transform 0.3s ease;
+}
+
+.popup-overlay.show .popup-content {
+    transform: scale(1);
+}
+
+.popup-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.popup-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.popup-close {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #666;
+    transition: color 0.2s ease;
+}
+
+.popup-close:hover {
+    color: #333;
+}
+
+.popup-body {
+    padding: 1rem 0;
+}
+
+.popup-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.popup-item:hover {
+    background-color: #f8f9fa;
+}
+
+.popup-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.popup-item span {
+    font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+    
+    .cash {
+        padding: 0 1rem;
+        height: 5rem;
+    }
+    
+    .cash .cash-n,
+    .cash-amount,
+    .investment-header p {
+        font-size: 1.5rem;
+    }
+    
+    .popup-content {
+        width: 95%;
+        margin: 1rem;
+    }
+}
+
+
 /* Stock Information */
 .stock-info {
     width: 100%;
