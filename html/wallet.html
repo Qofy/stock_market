@@ -44,14 +44,101 @@
     <!-- Sidebar -->
     <aside class="sidebar">
      <div class="spending-pot">
-      <header class="spending-port_header">
-      <p>Spending pot <span><img src="" alt=""></span></p>
+      <header class="spending-pot_header">
+      <p>Spending pot</p>
+      <img src="/html-icons/chevron.png" alt="chevron-left">
       </header>
+
+    <!----spending-amount-->
+      <div class="spending-pot_amount">
+        <p><span class="currency">$</span>0 <span class="round">.00</span></p>
+            <img src="/html-icons/plus.png" alt="add">
+      </div>
+
+      <!----adding cards-->
+      <div class="cards">
+        <p id="txt">Your cards</p>
+        <p id="txt2"><span class="percent">1%</span> cashback <span class="percent">.0%</span> FX fee <span class="percent">.2.2%</span> APY</p>
+        <div class="add-card">
+          <img src="/html-icons/plus1.png" alt="plus1">
+        </div>
+      </div>
+
+      <div class="advertisement">
+        <button class="close-btn" aria-label="Close advertisement">
+          <img src="/html-icons/close-window.png" alt="Close">
+        </button>
+        <div class="ad-content">
+          <p>Invest automatically with ready made pies</p>
+          <button class="cta-btn">Create pie</button>
+        </div>
      </div>
+
+
+        <div class="cashback">
+          <div>
+          <div class="cashback-header">
+            <p>Your cashback</p>
+            <h4>More</h4>
+          </div>
+          <div class="cash-back_content">
+            <div class="cashback-about">
+              <p class="txt3">
+                This month
+              </p>
+              <p id="txt2"><span class="percent">1%</span> cashback <span class="percent">.0%</span> FX fee <span class="percent">.2.2%</span> APY</p>
+               <p class="cash-spend"><span class="currency">$</span>0 <span class="round">.00</span></p>
+              <p>MONTHLY - LIMIT: <span class="cash-1">$15</span></p>
+            </div>
+            <div class="half-circle">
+       <img src="/html-icons/half-circle.png" alt="half-circle">
+     </div>
+
+            
+            </div>
+        </div>
+          </div>
+
+           <div class="cashback-header">
+            <p>Card limits</p>
+            <h4>More</h4>
+          </div>
+          
+          <div class="card-limit_btn">
+            <button id="special_btn">Transactions</button>
+            <button>ATM withdrawals</button>
+            <button>Money transfers</button>
+          </div>
+
+          <div class="card-limit_chart">
+            <div class="">
+              <h2>Monthly</h2>
+       <img src="/html-icons/half-circle.png" alt="half-circle">
+              <p>
+                USD:$0.00
+              </p>
+            </div>
+            <div class="">
+                 <h2>Daily</h2>
+       <img src="/html-icons/half-circle.png" alt="half-circle">
+              <p>
+                USD:$0.00
+              </p>
+            </div>
+          </div>
+          <div>
+
+          </div>
     </aside>
 
     <!-- Main Content Section -->
     <section class="main-body">
+      <h2>
+        Card transactions
+      </h2>
+      <div class="transactions">
+        No transactions yet
+      </div>
     </section>
   </main>
 </body>
