@@ -289,7 +289,7 @@ body {
 }
 
 .cta-btn {
-    width: 10rem;
+    width: 14rem;
     height: 3rem;
     border-radius: 1.5rem;
     border: none;
@@ -608,12 +608,11 @@ gap: .3rem;
   font-size: 2.5rem;
 }
 
-.current-price2 {
-  font-size: rem;
+.price_name .current-price2{
+  font-size: 3rem;
 }
-
-.current-price2 .currency2{
-font-size: 4rem;
+.current-price2 .currency2, .cents2{
+  font-size: 2.3rem;
 }
 
 .price-button{

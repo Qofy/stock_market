@@ -951,15 +951,13 @@ gap: .3rem;
 .price_name h3{
   font-size: 2.5rem;
 }
-
-.current-price2 {
-  font-size: rem;
+.currency, .round1{
+  font-size: 2.7rem;
 }
-
-.current-price2 .currency2{
-font-size: 4rem;
+.price_name .amount-invested{
+  font-size: 4rem;
+  color: #ffffff;
 }
-
 .price-button{
   padding: 1.6rem 8rem;
   border: none;
