@@ -37,11 +37,20 @@ body {
     z-index: 100;
 }
 
-.logo h1 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    color: #ffffff;
+.logo  {
+   width: 5.5rem;
+   height: 5.5rem;
+   display: flex;
+   justify-content: center;
+   
+   align-items: center;
+   border-radius: 50%;
+}
+
+.logo img{
+  width: 5.5rem;
+  height: 5.5rem;
+  border-radius: 50%;
 }
 
 /* Middle Navigation */
@@ -136,4 +145,145 @@ body {
 .notification-btn img {
     width: 2.4rem;
     height: 2.4rem;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: flex-start;
+    flex: 1; /* Take remaining space */
+    max-width: 60rem;
+    margin: 0 auto;
+    gap: 0;
+    overflow: hidden; 
+    height: calc(100vh - 6rem - 8rem);
+}
+
+
+/* Main Body Content */
+.main-body {
+    flex: 1;
+    height: 100%; 
+    width: 70rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #0a0a0a;
+    border-left: 1px solid #929292;
+    border-right: 1px solid #929292;
+    overflow-y: auto; 
+    overflow-x: hidden;
+}
+
+.content-head {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 4rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-btn{
+  display: flex;
+  flex-direction: row;
+  gap: 1.6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.content-btn button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: .8rem;
+  width: 34rem;
+  height: 7rem;
+  font-size: 2rem;
+  font-weight: 500;
+  border-radius: 2rem;
+  border: 1px solid #474848;
+  color: #ffffff;
+  background-color: #030303;
+  cursor: pointer;
+}
+
+.content-btn button:hover{
+opacity: .8;
+}
+
+#btn-special{
+  background-color: #3f7dbead;
+  border: 1px solid #6ea8e6ad;
+}
+
+.content-btn button img{
+  width: 5rem;
+  border-radius: 50%;
+}
+
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.menu-btn .menu-item{
+  width: 100%;
+  height: 5.5rem;
+  padding: 0 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.5rem;
+  border-bottom: 1px solid #929292;
+display: flex;
+}
+
+.menu-btn .menu-item div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.menu-btn .menu-item div img{
+  width: 2.4rem;
+}
+
+.menu-btn .menu-item .share{
+  width: 1.5rem;
+}
+
+.menu-btn2{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+.menu-btn2 button{
+  height: 6.5rem;
+  color: #ffffff;
+  border-radius: 5rem;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.menu-btn2 .btn1{
+  background-color: #156ae9;
+}
+
+.menu-btn2 .btn2{
+  background-color: rgb(152, 248, 7);
+}
+
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  color: #929292;
 }
