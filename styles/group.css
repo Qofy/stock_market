@@ -164,7 +164,7 @@ body {
 .main-body {
     flex: 1;
     height: 100%; 
-    width: 70rem;
+    width: 60rem;
     display: flex;
     flex-direction: column;
     padding: 2rem;
@@ -190,4 +190,99 @@ body {
   border-radius: 1rem;
   font-size: 1.7rem;
   color: #929292;
+}
+
+
+.mostconversation{
+  display: flex;
+  flex-direction: row;
+  scroll-behavior: smooth;
+   overflow-y: hidden; 
+    overflow-x: auto;
+  width: 100%;
+  gap: .8rem;
+
+}
+
+.mostconversation .news-box{
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+}
+.news-box .head{
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.head div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.head button{
+  width: 14rem;
+  height: 2.3rem;
+  border: none;
+  border-radius: 5rem;
+  color: #ffffff;
+  background-color: #404040;
+  font-size: 1rem;
+}
+.head div img{
+  width: 4rem;
+  border-radius: 50%;
+}
+.news-box{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #474848;
+  padding: 1.8rem;
+  border-radius: 1.5rem;
+}
+.news-box .chat-post{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.chat-post h3{
+  margin-bottom: 1rem;
+}
+
+.comment{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.comment div{
+  display: flex;
+  flex-direction: row;
+  gap: .6rem;
+  align-items: center;
+  margin-top: 2.4rem;
+}
+
+.company{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+ /* background-color: #0056b3; */
+ height: 5.5rem;
+ border-top: 1px solid #474848;
+}
+
+.company img{
+  border-radius: 1rem;
+  border: 1px solid #ffffff;
+  width: 38px;
+  height: 38px;
 }
