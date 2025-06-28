@@ -23,7 +23,7 @@
         <img src="/html-icons/wallet.png" alt="Wallet">
       </a>
       <a href="/html/group.html" class="nav-link" aria-label="Groups">
-        <img src="/html-icons/people.png" alt="Groups">
+        <img src="/html-icons/newspaper-folded.png" alt="news">
       </a>
       <a href="/html/menu.html" class="nav-link" aria-label="Menu">
         <img src="/html-icons/menu.png" alt="Menu">
@@ -267,34 +267,39 @@
         </div>
     </div>
 
-    <!-- Menu Popup Modal -->
-    <div class="popup-overlay">
-        <div class="popup-content">
-            <div class="popup-header">
-                <h3>Menu Options</h3>
-                <span class="popup-close">&times;</span>
+   <!-- Menu Popup Modal -->
+<div class="popup-overlay">
+    <div class="popup-content">
+        <div class="popup-header">
+            <h3>Filters</h3>
+            <span class="popup-close">&times;</span>
+        </div>
+        <div class="popup-body">
+            <h3>Show</h3>
+            <div class="manual">
+                <p>Manual investment</p>
+                <button class="toggle-switch" data-toggle="manual">
+                    <span class="toggle-slider"></span>
+                </button>
             </div>
-            <div class="popup-body">
-                <div class="popup-item">
-                    <img src="/html-icons/filter.png" alt="filter">
-                    <span>Filter Investments</span>
-                </div>
-                <div class="popup-item">
-                    <img src="/html-icons/sort.png" alt="sort">
-                    <span>Sort by Performance</span>
-                </div>
-                <div class="popup-item">
-                    <img src="/html-icons/export.png" alt="export">
-                    <span>Export Data</span>
-                </div>
-                <div class="popup-item">
-                    <img src="/html-icons/settings.png" alt="settings">
-                    <span>Settings</span>
-                </div>
+            <div class="pie">
+                <p>Pies</p>
+                <button class="toggle-switch" data-toggle="pie">
+                    <span class="toggle-slider"></span>
+                </button>
+            </div>
+            <h3>Order</h3>
+            <div class="orderContent">
+                <div>Name</div>
+                <div>Value</div>
+                <div>Gain/Loss</div>
+                <div>Investment date</div>
             </div>
         </div>
-        
     </div>
+</div>
+
+
      <div class="asset-allocation">
     <div class="asset-header">
       <p>Asset allocation</p>
@@ -433,4 +438,6 @@
   </main>
 </body>
     <script src="/js/pop-up.js"></script>
+    <script src="/js/pop-up.js"></script>
 </html>
+
